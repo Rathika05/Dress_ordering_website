@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Dress Ordering</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Online Dress Store</h1>
+
+    <div class="dress-list">
+      <h2>Available Dresses</h2>
+      <div class="dress" id="dress1">
+        <img src="https://via.placeholder.com/200x300" alt="Dress 1">
+        <h3>Red Dress</h3>
+        <p>$49.99</p>
+        <button class="add-to-cart" data-name="Red Dress" data-price="49.99">Add to Cart</button>
+      </div>
+      <div class="dress" id="dress2">
+        <img src="https://via.placeholder.com/200x300" alt="Dress 2">
+        <h3>Blue Dress</h3>
+        <p>$59.99</p>
+        <button class="add-to-cart" data-name="Blue Dress" data-price="59.99">Add to Cart</button>
+      </div>
+      <div class="dress" id="dress3">
+        <img src="https://via.placeholder.com/200x300" alt="Dress 3">
+        <h3>Green Dress</h3>
+        <p>$69.99</p>
+        <button class="add-to-cart" data-name="Kurta Dress" data-price="69.99">Add to Cart</button>
+      </div>
+    </div>
+
+    <h2>Your Cart</h2>
+    <ul id="cart"></ul>
+
+    <form id="orderForm">
+      <h3>Place Your Order</h3>
+      <label for="customerName">Your Name:</label>
+      <input type="text" id="customerName" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" required></textarea>
+
+      <button type="submit">Place Order</button>
+    </form>
+
+    <div id="responseMessage"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
